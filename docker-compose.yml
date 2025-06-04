@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  
+  backend:
+    container_name: xslt-transformer-back-end
+    build: 
+      context: ./backend
+    image: atrash70/xslt-backend:1.0.0
+    ports:
+      - "28086:8080"
+  frontend:
+    container_name: xslt-transformer-front-end
+    build: 
+      context: ./frontend
+    image: atrash70/xslt-frontend:1.0.0
+    ports:
+      - "28088:80"

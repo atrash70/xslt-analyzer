@@ -1,0 +1,7 @@
+postnl/cbs/controller/XsltController.class
+postnl/cbs/service/XsltService.class
+postnl/cbs/model/MappingEntry.class
+postnl/cbs/model/XsltAnalysisResult.class
+postnl/cbs/util/XsltParser.class
+postnl/cbs/XsltAnalyzerApplication.class
+postnl/cbs/config/CorsConfig.class
