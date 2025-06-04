@@ -13,22 +13,22 @@ import java.nio.charset.StandardCharsets;
 
 @RestController
 @RequestMapping("/api/xslt")
-private static final Logger logger = LoggerFactory.getLogger(XsltController.class);
+public class XsltController {
 
-    public class XsltController {
+    private static final Logger logger = LoggerFactory.getLogger(XsltController.class);
 
     @Autowired
     private XsltService xsltService;
 
-        @PostMapping("/analyze")
-    public ResponseEntity<?> analyzeXslt(...) {
-        logger.info("Received XSLT file for analysis");
+    @PostMapping("/analyze")
     public ResponseEntity<?> analyzeXslt(@RequestParam("xslt") MultipartFile xsltFile) {
+        logger.info("Received XSLT file for analysis");
         try {
             String xsltContent = new String(xsltFile.getBytes(), StandardCharsets.UTF_8);
             XsltAnalysisResult result = xsltService.analyzeXslt(xsltContent);
             return ResponseEntity.ok(result);
         } catch (Exception e) {
+            logger.error("Error processing XSLT", e);
             return ResponseEntity.badRequest().body("Invalid XSLT: " + e.getMessage());
         }
     }

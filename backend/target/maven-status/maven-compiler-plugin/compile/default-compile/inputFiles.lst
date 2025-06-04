@@ -1,7 +1,7 @@
-/Users/m.alatrash/Library/Mobile Documents/com~apple~CloudDocs/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/config/CorsConfig.java
-/Users/m.alatrash/Library/Mobile Documents/com~apple~CloudDocs/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/model/MappingEntry.java
-/Users/m.alatrash/Library/Mobile Documents/com~apple~CloudDocs/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/service/XsltService.java
-/Users/m.alatrash/Library/Mobile Documents/com~apple~CloudDocs/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/controller/XsltController.java
-/Users/m.alatrash/Library/Mobile Documents/com~apple~CloudDocs/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/XsltAnalyzerApplication.java
-/Users/m.alatrash/Library/Mobile Documents/com~apple~CloudDocs/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/model/XsltAnalysisResult.java
-/Users/m.alatrash/Library/Mobile Documents/com~apple~CloudDocs/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/util/XsltParser.java
+/Users/m.alatrash/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/model/XsltAnalysisResult.java
+/Users/m.alatrash/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/controller/XsltController.java
+/Users/m.alatrash/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/model/MappingEntry.java
+/Users/m.alatrash/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/util/XsltParser.java
+/Users/m.alatrash/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/config/CorsConfig.java
+/Users/m.alatrash/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/XsltAnalyzerApplication.java
+/Users/m.alatrash/_work/projects/xslt-analyzer/backend/src/main/java/postnl/cbs/service/XsltService.java

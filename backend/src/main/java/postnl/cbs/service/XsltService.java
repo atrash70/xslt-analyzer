@@ -1,8 +1,8 @@
 package postnl.cbs.service;
 
-import org.springframework.stereotype.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 import postnl.cbs.model.MappingEntry;
 import postnl.cbs.model.XsltAnalysisResult;
 import postnl.cbs.util.XsltParser;
@@ -13,16 +13,18 @@ import java.io.StringReader;
 import java.util.List;
 
 @Service
-private static final Logger logger = LoggerFactory.getLogger(XsltService.class);
+public class XsltService {
 
-    public class XsltService {
+    private static final Logger logger = LoggerFactory.getLogger(XsltService.class);
 
     public XsltAnalysisResult analyzeXslt(String xsltContent) throws Exception {
         logger.debug("Starting XSLT analysis");
         validateXslt(xsltContent);
+
         List<MappingEntry> mappings = XsltParser.extractMappings(xsltContent);
         String sampleInput = "<sample><data>input</data></sample>";
         String sampleOutput = "<result><value>output</value></result>";
+
         return new XsltAnalysisResult(mappings, sampleInput, sampleOutput);
     }
 
